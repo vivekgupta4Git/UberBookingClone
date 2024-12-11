@@ -58,7 +58,7 @@ fun ListTile(
                 }
             }
         },
-        headlineText = {
+        headlineContent = {
             title?.let { nnTitle ->
                 Text(
                     text = nnTitle,
@@ -68,7 +68,7 @@ fun ListTile(
                 )
             }
         },
-        supportingText = {
+        supportingContent = {
             subtitle?.let { nnSubtitle ->
                 Text(
                     text = nnSubtitle,

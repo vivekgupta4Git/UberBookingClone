@@ -50,13 +50,13 @@ fun MobilePaymentOptionItem(
     }
     ListItem(
         modifier = Modifier.clickableWithRipple(onClick = paymentOption.onClick),
-        headlineText = {
+        headlineContent = {
             Text(
                 text = paymentOption.name,
                 style = MaterialTheme.typography.bodyMedium
             )
         },
-        supportingText = paymentOption.value?.let { nnValue ->
+        supportingContent = paymentOption.value?.let { nnValue ->
             {
                 Text(
                     text = nnValue,

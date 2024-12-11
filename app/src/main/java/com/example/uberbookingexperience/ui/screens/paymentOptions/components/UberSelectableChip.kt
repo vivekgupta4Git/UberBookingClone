@@ -70,10 +70,10 @@ fun UberSelectableChip(
             )
         }, shape = CircleShape,
         border = FilterChipDefaults.filterChipBorder(
-            borderColor = Color.Transparent
+            borderColor = Color.Transparent,
+            enabled = true,
+            selected = false
         ),
-        elevation = FilterChipDefaults.filterChipElevation(
-            defaultElevation = elevation
-        )
+        elevation = FilterChipDefaults.filterChipElevation(elevation = elevation)
     )
 }

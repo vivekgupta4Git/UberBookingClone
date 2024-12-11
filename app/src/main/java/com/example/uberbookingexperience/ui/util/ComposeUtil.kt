@@ -5,6 +5,7 @@ import androidx.compose.foundation.Indication
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.widthIn
+import androidx.compose.material.ripple
 import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
@@ -19,7 +20,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun Modifier.clickableWithRipple(
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    indication: Indication = rememberRipple(),
+    indication: Indication = ripple(),
     onClick: () -> Unit
 ) = clickable(
     interactionSource = interactionSource,

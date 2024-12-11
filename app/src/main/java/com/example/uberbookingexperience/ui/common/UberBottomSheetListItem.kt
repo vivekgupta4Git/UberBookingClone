@@ -46,7 +46,7 @@ fun UberBottomSheetListItem(
                     tint = iconTint ?: LocalContentColor.current
                 )
             },
-            headlineText = {
+            headlineContent = {
                 title?.let { nnTitle ->
                     Text(
                         text = nnTitle,
@@ -55,7 +55,7 @@ fun UberBottomSheetListItem(
                     )
                 }
             },
-            supportingText = subtitle?.let { nnSubtitle ->
+            supportingContent = subtitle?.let { nnSubtitle ->
                 {
                     Text(
                         text = nnSubtitle,

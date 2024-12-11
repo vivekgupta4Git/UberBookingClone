@@ -18,7 +18,7 @@ import androidx.compose.runtime.remember
 @Composable
 fun BottomSheetScaffoldState.rememberBottomSheetProgress() = remember {
     derivedStateOf {
-        val fraction = bottomSheetState.progress.fraction
+        val fraction = bottomSheetState.progress
         val targetValue = bottomSheetState.targetValue
         val currentValue = bottomSheetState.currentValue
 
